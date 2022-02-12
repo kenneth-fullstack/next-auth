@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
       <main className="py-2 flex flex-1 flex-col justify-center items-center min-h-screen">
         <h1 className="m-0 text-7xl text-center text-indigo-500 hover:underline focus:underline">
-          asdasds
+          asdasdsasdasds
         </h1>
       </main>
     </div>
