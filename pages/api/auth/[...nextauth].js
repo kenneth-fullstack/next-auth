@@ -75,9 +75,7 @@ import { FirebaseAdapter } from "@next-auth/firebase-adapter";
 import firebase from "firebase/app";
 import "firebase/firestore";
 
-const firestore = (
-  firebase.apps[0] ?? firebase.initializeApp(firebaseConfig)
-).firestore();
+const firestore = (firebase.apps[0] ?? firebase.initializeApp(firebaseConfig)).firestore();
 
 // For more information on each option (and a full list of options) go to
 // https://next-auth.js.org/configuration/options
