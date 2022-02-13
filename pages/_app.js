@@ -1,4 +1,7 @@
 import "../styles/globals.scss";
+
+// Components
+import CoreLayout from "../components/layout";
 // import { SessionProvider } from "next-auth/react";
 
 // function MyApp({ Component, pageProps: { session, ...pageProps } }) {
@@ -9,7 +12,11 @@ import "../styles/globals.scss";
 //   );
 // }
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <CoreLayout>
+      <Component {...pageProps} />;
+    </CoreLayout>
+  );
 }
 
 export default MyApp;

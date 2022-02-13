@@ -3,41 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.primary-text-shadow:hover {
+  text-shadow: 2px 3px 1px rgb(245 158 11);
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.product-category .minus-icon {
-  display: none;
-}
-.product-category:hover .arrow-down-icon {
-  display: none;
-}
-
-.product-category:hover .minus-icon {
-  display: block;
-}
-
-// .header {
-//   font-size: 5rem;
-//   font-weight: 700;
-//   color: red;
-//   width: 100%;
-//   height: 100vh;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
