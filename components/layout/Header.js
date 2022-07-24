@@ -98,7 +98,7 @@ function Header() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        <div className="w-10/12 flex items-center justify-between mx-auto py-3">
+        <div className="container mx-auto flex items-center justify-between py-3">
           <div className="img-logo">
             <Image src="/assets/images/logo.png" alt="PC Link Logo" width={152} height={45} />
           </div>

@@ -1,13 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
-import Image from "next/image";
 
-import { FaShoppingCart, FaHeart } from "react-icons/fa";
-import { BsFillEyeFill } from "react-icons/bs";
+// import { BsFillEyeFill } from "react-icons/bs";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
+
+import products from "../data";
+
+// Components
+import Card from "../components/card";
 
 // Import Swiper styles
 import "swiper/css";
@@ -55,29 +58,12 @@ export default function Home() {
             );
           })}
         </Swiper>
-        <div>
+        <div className="container mx-auto py-4">
           <h1 className="text-3xl font-bold">Components</h1>
-          <div className="shadow-lg shadow-gray-900 max-w-fit">
-            <div className="image-container">
-              <Image
-                src="https://res.cloudinary.com/deiecmpac/image/upload/v1575007788/skmhcv5dvvddrxjqra7b.jpg"
-                alt="Product Item"
-                width={280}
-                height={250}
-              />
-            </div>
-            <div>
-              <h1></h1>
-              <h3></h3>
-              <div className="flex items-center justify-between">
-                <button className="flex justify-center border-[1px] text-xs font-bold  py-1 px-2 border-gray-800">
-                  <FaShoppingCart size={20} className="mr-2" />
-                  <span className="text-gray-600">ADD TO CART</span>
-                </button>
-                <FaHeart size={20} />
-                <BsFillEyeFill size={20} />
-              </div>
-            </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            {products.map((product) => {
+              return <Card key={product.id} product={product} />;
+            })}
           </div>
         </div>
       </div>

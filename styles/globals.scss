@@ -3,6 +3,50 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
 .primary-text-shadow:hover {
   text-shadow: 2px 3px 1px rgb(245 158 11);
+}
+
+.mySwiper3 .swiper-slide {
+  border: 1px solid #dddddd;
+  border-bottom: 2px solid #f59e0b;
+  opacity: 0.3;
+}
+
+.mySwiper3 .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-button-next {
+  background-image: url("../public/assets/angle-right-solid.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  background-size: 15px;
+  color: #f59e0b;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  background-image: url("../public/assets/angle-left-solid.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  background-size: 15px;
+  color: #f59e0b;
+}
+
+.swiper-button-prev::after {
+  display: none;
 }
